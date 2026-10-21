@@ -1,0 +1,16 @@
+doctype html
+html
+  head
+    title= title
+    link(rel="stylesheet", href="/css/style.css")
+  body
+    h1= title
+    a(href="/") Return to the homepage
+    form(action="/update-cobj", method="POST")
+      label(for="name") Name
+      input(type="text", id="name", name="name")
+      label(for="species") Species
+      input(type="text", id="species", name="species")
+      label(for="care_level") Care level
+      input(type="text", id="care_level", name="care_level")
+      input(type="submit", value="Create")
